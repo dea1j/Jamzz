@@ -1,10 +1,12 @@
-import './App.css';
+import React from 'react'
+import { GlobalState } from './GlobalState'
+import AppContainer from './AppContainer'
 
 function App() {
   return (
-    <div className="App">
-     Hello
-    </div>
+    <GlobalState>
+      <AppContainer />
+    </GlobalState>
   );
 }
 
